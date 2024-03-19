@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <head>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+      <!-- หรือ <script src="https://unpkg.com/sweetalert2@10"></script> -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css"
+      />
+      <!-- หรือ <link rel="stylesheet" href="https://unpkg.com/sweetalert2@10/dist/sweetalert2.min.css"> -->
+    </head>
+
+    <title>prediction malaria</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <p>Malaria Prediction</p>
+      </div>
+      <div class="card">
+        <div class="upload">
+          <form onsubmit="onSubmit(event)">
+            <div class="image_preview">
+              <img src="static/image/select_image.png" height="100%" />
+            </div>
+            <input type="file" name="image" id="image" />
+            <label id="preview" for="image" class="custom-file-upload"
+              >Select file</label
+            >
+
+            <input type="submit" name="image" id="submit" value="Predic" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="static/script.js"></script>
+  </body>
+</html>

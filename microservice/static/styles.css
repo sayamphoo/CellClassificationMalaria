@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #0055ff
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Prompt", sans-serif;
+    font-weight: 300;
+}
+
+body {
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #ffae00;
+}
+.container {
+    padding: 10px;
+}
+.title>p {
+    font-size: 3rem;
+    color: #242424;
+    text-align: center;
+    font-weight: 400;
+}
+
+.card {
+    margin: auto;
+    width: 400px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+
+.card>.upload>form>.image_preview {
+    text-align: center;
+    text-align: center;
+    border: 1px dashed #bebebe;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    background-color: #a6a6a6;
+}
+
+.custom-file-upload {
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    background-color: var(--primary-color);
+}
+
+.image_preview {
+    height: 200px;
+}
