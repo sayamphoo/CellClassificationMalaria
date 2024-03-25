@@ -4,7 +4,6 @@ import io
 from PIL import Image
 
 model = tf.keras.models.load_model('../model/malaria_model.h5')
-
 def prediction(image):
 
     # Read image from bytes
